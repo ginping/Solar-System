@@ -1,0 +1,505 @@
+{
+    "oort_cloud": {
+        "diameter": 18921460945160,
+        "radius": 9460730472580
+    },
+    "parent": {
+        "id": "0",
+        "name": "太阳",
+        "diameter": 1391016,
+        "mass": 1988500,
+        "gravity": 274,
+        "density": 1408,
+        "rotationPeriod": 609.12,
+        "distanceFromParent": null,
+        "orbitalPeriod": null,
+        "orbitalVelocity": null,
+        "orbitalInclination": null,
+        "axialTilt": null,
+        "meanTemperature": "5778 K",
+        "solarConstant": 1.365,
+        "composition": {
+            "majorElements": [
+                {
+                    "abbr": "H",
+                    "element": "Hydrogen",
+                    "percentageOfComposition": 90.965
+                },
+                {
+                    "abbr": "He",
+                    "element": "Helium",
+                    "percentageOfComposition": 8.889
+                }
+            ]
+        },
+        "_3d": {
+            "textures": {
+                "base": "/Graduation-project-simple/src/assets/textures/sun_detailed.png"
+            }
+        }
+    },
+    "planets": [
+        {
+            "id": 1,
+            "name": "水星",
+            "diameter": 4879,
+            "mass": 0.330,
+            "gravity": 3.7,
+            "density": 5427,
+            "rotationPeriod": 1407.6,
+            "lengthOfDay": 4222.6,
+            "distanceFromParent": 57900000,
+            "orbitalPeriod": 88,
+            "orbitalVelocity": 47.4,
+            "orbitalInclination": 7,
+            "axialTilt": 0.01,
+            "orbitPositionOffset": 48,
+            "meanTemperature": 167,
+            "surfaceTemps": {
+                "min": 100,
+                "mean": 340,
+                "max": 700
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/mercury.jpg",
+                    "topo": "/Graduation-project-simple/src/assets/textures/mercury_topo.jpg"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "name": "金星",
+            "diameter": 12104,
+            "mass": 4.87,
+            "gravity": 8.9,
+            "density": 5243,
+            "rotationPeriod": -5832.5,
+            "lengthOfDay": 2802,
+            "distanceFromParent": 108200000,
+            "orbitalPeriod": 224.7,
+            "orbitalVelocity": 35,
+            "orbitalInclination": 3.4,
+            "axialTilt": 177.4,
+            "orbitPositionOffset": 155,
+            "meanTemperature": 464,
+            "surfaceTemps": {
+                "min": 655,
+                "mean": 735,
+                "max": 1100
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/venus.jpg",
+                    "topo": "/Graduation-project-simple/src/assets/textures/venus_topo.jpg"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "name": "地球",
+            "diameter": 12756,
+            "mass": 5.97,
+            "gravity": 9.8,
+            "density": 5514,
+            "rotationPeriod": 23.9,
+            "lengthOfDay": 24,
+            "distanceFromParent": 149600000,
+            "orbitalPeriod": 365.2,
+            "orbitalVelocity": 29.8,
+            "orbitalInclination": 0,
+            "axialTilt": 23.4,
+            "orbitPositionOffset": 0,
+            "meanTemperature": 15,
+            "surfaceTemps": {
+                "min": 185,
+                "mean": 288,
+                "max": 331
+            },
+            "rings": false,
+            "satellites": [
+                {
+                    "id": "3a",
+                    "name": "Moon",
+                    "diameter": 3476.2,
+                    "mass": 0.07342,
+                    "distanceFromParent": 384400,
+                    "orbitalPeriod": 27.3,
+                    "orbitalInclination": 21,
+                    "gravity": 1.62,
+                    "surfaceTemps": {
+                        "min": -110,
+                        "max": 130
+                    },
+                    "_3d": {
+                        "textures": {
+                            "base": "/Graduation-project-simple/src/assets/textures/earth/satellites/moon_1k.jpg",
+                            "topo": "/Graduation-project-simple/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                        }
+                    }
+                }
+            ],
+            "satellites_mech": [
+                {
+                    "ISS": {
+                        "distanceFromParent": 400
+                    }
+                }
+            ],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/earth_4k.jpg",
+                    "topo": "/Graduation-project-simple/src/assets/textures/earth_topo_4k.jpg",
+                    "specular": "/Graduation-project-simple/src/assets/textures/earth_ocean_reflectance_10k.jpg",
+                    "clouds": "/Graduation-project-simple/src/assets/textures/earth_clouds_active2.png"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "name": "火星",
+            "diameter": 6792,
+            "mass": 0.642,
+            "gravity": 3.7,
+            "density": 3933,
+            "rotationPeriod": 24.6,
+            "lengthOfDay": 24.7,
+            "distanceFromParent": 227900000,
+            "orbitalPeriod": 687,
+            "orbitalVelocity": 24.1,
+            "orbitalInclination": 1.85,
+            "axialTilt": 25.2,
+            "orbitPositionOffset": 85,
+            "meanTemperature": -65,
+            "surfaceTemps": {
+                "min": 130,
+                "mean": 210,
+                "max": 293
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/mars.jpg",
+                    "topo": "/Graduation-project-simple/src/assets/textures/mars_topo.jpg"
+                }
+            }
+        },
+        {
+            "id": 5,
+            "name": "木星",
+            "diameter": 142984,
+            "mass": 1898,
+            "gravity": 23.1,
+            "density": 1326,
+            "rotationPeriod": 9.9,
+            "lengthOfDay": 9.9,
+            "distanceFromParent": 778600000,
+            "orbitalPeriod": 4331,
+            "orbitalVelocity": 13.1,
+            "orbitalInclination": 1.303,
+            "axialTilt": 3.13,
+            "orbitPositionOffset": 2692,
+            "meanTemperature": -110,
+            "surfaceTemps": {
+                "min": null,
+                "mean": 125,
+                "max": null
+            },
+            "rings": {
+                "innerRadius": 110500,
+                "outerRadius": 129000,
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/jupiter/rings/rings_map.png",
+                    "colorMap": "/Graduation-project-simple/src/assets/textures/jupiter/rings/rings_color_map.png"
+                }
+            },
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/jupiter.jpg"
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": "土星",
+            "diameter": 120536,
+            "mass": 568,
+            "density": 687,
+            "gravity": 9,
+            "rotationPeriod": 10.7,
+            "lengthOfDay": 10.7,
+            "distanceFromParent": 1433500000,
+            "orbitalPeriod": 10747,
+            "orbitalVelocity": 9.7,
+            "orbitalInclination": 2.48524,
+            "axialTilt": 26.73,
+            "orbitPositionOffset": 13753,
+            "meanTemperature": -140,
+            "surfaceTemps": {
+                "min": null,
+                "mean": 95,
+                "max": null
+            },
+            "rings": {
+                "innerRadius": 74510,
+                "outerRadius": 140220,
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/saturn/rings/rings_map.png",
+                    "colorMap": "/Graduation-project-simple/src/assets/textures/saturn/rings/rings_color_map.png"
+                }
+            },
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/saturn.jpg"
+                }
+            }
+        },
+        {
+            "id": 7,
+            "name": "天王星",
+            "mass": 86.8,
+            "diameter": 51118,
+            "density": 1271,
+            "gravity": 8.7,
+            "rotationPeriod": -17.2,
+            "lengthOfDay": 17.2,
+            "distanceFromParent": 2872500000,
+            "orbitalPeriod": 30589,
+            "orbitalVelocity": 6.8,
+            "orbitalInclination": 0.8,
+            "axialTilt": 97.8,
+            "orbitPositionOffset": 29654,
+            "meanTemperature": -195,
+            "surfaceTemps": {
+                "min": null,
+                "mean": 57,
+                "max": null
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/uranus.jpg"
+                }
+            }
+        },
+        {
+            "id": 8,
+            "name": "海王星",
+            "mass": 102,
+            "diameter": 49528,
+            "density": 1638,
+            "gravity": 11,
+            "rotationPeriod": 16.1,
+            "lengthOfDay": 16.1,
+            "distanceFromParent": 4495100000,
+            "orbitalPeriod": 59800,
+            "orbitalVelocity": 5.4,
+            "orbitalInclination": 1.8,
+            "axialTilt": 28.3,
+            "orbitPositionOffset": 62885,
+            "meanTemperature": -200,
+            "surfaceTemps": {
+                "min": null,
+                "mean": 59,
+                "max": null
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/neptune.jpg"
+                }
+            }
+        }
+    ],
+    "dwarfPlanets": [
+        {
+            "id": 10,
+            "name": "Ceres",
+            "mass": "9.47 * 10^20",
+            "diameter": 952.4,
+            "density": 2.09,
+            "gravity": 0.28,
+            "rotationPeriod": 9.0,
+            "lengthOfDay": 9.0,
+            "distanceFromParent": 413690250,
+            "orbitalPeriod": 1681.6,
+            "orbitalVelocity": 17.878,
+            "orbitalInclination": 9.647,
+            "axialTilt": 4.0,
+            "surfaceTemps": {
+                "min": null,
+                "mean": 168,
+                "max": 235
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/ceres.png"
+                }
+            }
+        },
+        {
+            "id": 11,
+            "name": "Eris",
+            "mass": "1.66 * 10^22",
+            "diameter": 2326,
+            "density": 2.52,
+            "gravity": 0.82,
+            "rotationPeriod": 25.9,
+            "lengthOfDay": 25.9,
+            "distanceFromParent": 10166000000,
+            "orbitalPeriod": 203830,
+            "orbitalVelocity": 3.4338,
+            "orbitalInclination": 44.04,
+            "axialTilt": 0,
+            "meanTemperature": null,
+            "surfaceTemps": {
+                "min": 30,
+                "mean": 42.5,
+                "max": 55
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/pluto.jpg"
+                }
+            }
+        },
+        {
+            "id": 12,
+            "name": "Haumea",
+            "mass": "4.006 * 10^21",
+            "diameter": 1436,
+            "density": 2.6,
+            "gravity": 0.63,
+            "rotationPeriod": 3.9155,
+            "lengthOfDay": 3.9155,
+            "distanceFromParent": 6166212800,
+            "orbitalPeriod": 103774,
+            "orbitalVelocity": 4.53,
+            "orbitalInclination": 28.19,
+            "axialTilt": 0,
+            "meanTemperature": null,
+            "surfaceTemps": {
+                "min": 50,
+                "mean": 50,
+                "max": 50
+            },
+            "rings": false,
+            "satellites": [
+                {
+                    "id": 12.1,
+                    "name": "Namaka",
+                    "distanceFromParent": 25657,
+                    "orbitalPeriod": 18.278,
+                    "orbitalInclination": 113.013,
+                    "diameter": 170,
+                    "mass": "1.79 * 10^18",
+                    "gravity": 0.001,
+                    "surfaceTemps": {
+                        "min": 29,
+                        "max": 32,
+                        "mean": 35
+                    },
+                    "_3d": {
+                        "textures": {
+                            "base": "/Graduation-project-simple/src/assets/textures/earth/satellites/moon_1k.jpg",
+                            "topo": "/Graduation-project-simple/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                        }
+                    }
+                },
+                {
+                    "id": 12.2,
+                    "name": "Hiʻiaka",
+                    "distanceFromParent": 49880,
+                    "orbitalPeriod": 49.462,
+                    "orbitalInclination": 126.356,
+                    "diameter": 310,
+                    "mass": "1.79 * 10^19",
+                    "gravity": 0.001,
+                    "surfaceTemps": {
+                        "min": 29,
+                        "max": 32,
+                        "mean": 35
+                    },
+                    "_3d": {
+                        "textures": {
+                            "base": "/Graduation-project-simple/src/assets/textures/earth/satellites/moon_1k.jpg",
+                            "topo": "/Graduation-project-simple/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                        }
+                    }
+                }
+            ],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/pluto.jpg"
+                }
+            }
+        },
+        {
+            "id": 13,
+            "name": "Makemake",
+            "mass": "3 * 10^21",
+            "diameter": 1440,
+            "density": 2.6,
+            "gravity": null,
+            "rotationPeriod": 7.771,
+            "lengthOfDay": 7.771,
+            "distanceFromParent": 6838867000,
+            "orbitalPeriod": 112897,
+            "orbitalVelocity": 4.419,
+            "orbitalInclination": 29,
+            "axialTilt": null,
+            "meanTemperature": null,
+            "surfaceTemps": {
+                "min": 32,
+                "mean": 38,
+                "max": 44
+            },
+            "rings": false,
+            "satellites": [],
+            "_3d": {
+                "textures": {
+                    "base": "/Graduation-project-simple/src/assets/textures/pluto.jpg"
+                }
+            }
+        }
+    ],
+    "asteroidBelt": {
+        "count": 5000,
+        "distanceFromParent": {
+            "min": 344100000,
+            "max": 493700000
+        },
+        "_3d": {
+            "textures": {
+                "base": "/Graduation-project-simple/src/assets/textures/pluto.jpg"
+            }
+        }
+    },
+    "kuiperBelt": {
+        "diameter": 14959787070,
+        "radius": 7479893535,
+        "count": 10000,
+        "distanceFromParent": {
+            "min": 4638000000,
+            "max": 7480000000
+        },
+        "_3d": {
+            "textures": {
+                "base": "/Graduation-project-simple/src/assets/textures/pluto.jpg"
+            }
+        }
+    }
+}

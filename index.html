@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<title>太阳系3D模型</title>
+        <link rel="stylesheet" type="text/css" href="src/assets/css/main.css">
+	</head>
+	<body>
+        <div class="container-main">
+            <div id="menu" class="menu"></div>
+            <div id="moons" class="moons"></div>
+            <div id="current-target-title" class="current-target-title active">太阳系</div>
+            <div class="intro-screen">
+                <div class="intro-text">
+                    <div class="inner">
+                        <div id="render-scene" class="button large render-scene">
+                            <span>Start</span>
+                        </div>
+                    </div>
+                    <div id="loading-prompt" class="loading-prompt">
+                        <span>正在构建太阳系...</span>
+                        <div id="realtime-updates"></div>
+                        <div id="progress-bar" class="progress" role="progressbar" tabindex="0">
+                            <div class="progress-meter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="solar-system" class="scene"></div>
+        </div>
+
+        <script type="text/javascript" src="src/app/vendor/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="src/app/vendor/foundation-sites/dist/foundation.min.js"></script>
+        <script type="text/javascript" src="src/app/vendor/stats/build/stats.min.js"></script>
+        <script type="text/javascript" src="src/app/vendor/tweenjs/build/tween.min.js"></script>
+        <script type="text/javascript" src="src/app/vendor/three.js/three.min.js"></script>
+        <script data-main="src/app/app" src="src/app/vendor/requirejs/require.js"></script>
+	</body>
+</html>
