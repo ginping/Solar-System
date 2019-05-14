@@ -9,9 +9,7 @@ define(
   'Models/Moon',
   'Controllers/RenderController',
   'Controllers/OrbitController',
-  'Controllers/TravelController',
   'Controllers/MenuController',
-  'Controllers/EffectsController',
   'Modules/RandomColorGenerator',
 ],
 function(
@@ -24,18 +22,11 @@ function(
   Moon,
   RenderController,
   OrbitController,
-  TravelController,
   MenuController,
-  EffectsController,
   RandomColorGenerator,
 ) {
   'use strict';
 
-  /**
-   * SolarSystemFactory
-   *
-   * @param {Object} data
-   */
   function SolarSystemFactory(data) {
     this.scene = new Scene();
     this.data = data || {};
@@ -51,12 +42,6 @@ function(
     this._randomColorGenerator = new RandomColorGenerator();
   }
 
-  /**
-   * Builds all objects in the scene.
-   *
-   * @param  {Object}  data
-   * @return {Promise}
-   */
   SolarSystemFactory.prototype.build = function(data) {
     return new Promise((resolve)=> {
       var startTime = new Date().getTime();
@@ -158,13 +143,8 @@ function(
     document.dispatchEvent(endEvent);
   };
 
-  /**
-   * Right now this basically just renders the prototype of the ISS. I'd like to get this to
-   * work with man-made satellites and model those as well.
-   */
-  SolarSystemFactory.prototype.buildMechanicalSatellites = function(planet, satellitesData) {
 
-    // console.debug('Build Mech Satellite', planet, satellitesData);
+  SolarSystemFactory.prototype.buildMechanicalSatellites = function(planet, satellitesData) {
 
     if (!(satellitesData instanceof Array)) {
       throw new Error('Argument satellitesData must be an instanceof Array.');
@@ -204,8 +184,6 @@ function(
       this.solarSystemObjects.moons.push(moon);
 
       planet._moons.push(moon);
-      // planet.threeObject.add(moon.orbitCentroid);
-      // planet.objectCentroid.add(moon.orbitCentroid);
 
       planet.core.add(moon.orbitCentroid);
 
@@ -254,7 +232,6 @@ function(
       var i;
 
       for (i = 0; i < planets.length; i++) {
-        var startTime = new Date().getTime();
 
         promises.push(this.buildPlanet(planets[i], sun).then((response)=> {
           var buildEvent = new CustomEvent('solarsystem.build.object.complete', {
@@ -353,12 +330,6 @@ function(
       currentTarget: currentTarget
     });
 
-    var effectsController = new EffectsController({
-      el: '#toggle-effects',
-      sceneObjects: this.solarSystemObjects.planets
-    });
-
-    $('#social-buttons-corner').addClass('visible');
   };
 
   SolarSystemFactory.prototype.updateProgress = function(percentage, elapsedTime) {

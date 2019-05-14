@@ -13,7 +13,6 @@ function(OrbitControls) {
       this._camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.05, 5 * Math.pow(10, 13));
       this._orbitControls = new OrbitControls(this._camera, this._sceneElement);
 
-      // this.setCamera();
       this.setLights();
       this.setAxis();
     };
@@ -25,11 +24,6 @@ function(OrbitControls) {
     get orbitControls() {
       return this._orbitControls;
     }
-
-    setCamera() {
-      this._camera.position.set(0, 0, 300);
-      this._camera.lookAt(new THREE.Vector3(0, 0, 0));
-    };
 
     setLights() {
       var ambientLightCount = 4;

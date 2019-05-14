@@ -3,9 +3,8 @@ define(
   'Environment/Constants',
   'Modules/Scene',
   'Modules/RandomNumberGenerator',
-  'vendor/ajaxrequest/dist/ajaxrequest'
 ],
-function(Constants, Scene, RandomNumberGenerator, AjaxRequest) {
+function(Constants, Scene, RandomNumberGenerator) {
   'use strict';
 
   class StarFactory {
@@ -17,15 +16,6 @@ function(Constants, Scene, RandomNumberGenerator, AjaxRequest) {
       this._texture = new THREE.TextureLoader().load('src/assets/textures/star.jpg');
       this._scene = scene;
 
-      this.getStarData();
-    }
-
-    getStarData() {
-      // var request = new AjaxRequest('GET', 'http://star-api.herokuapp.com/api/v1/stars');
-
-      // request.send().then((data)=> {
-      //   console.debug('Star Data:', data);
-      // });
     }
 
     getPosition(i) {

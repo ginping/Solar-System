@@ -1,11 +1,11 @@
 define(
 [
-	'jquery',
-	'underscore',
-	'backbone',
-	'Controllers/TravelController',
+  'jquery',
+  'underscore',
+  'backbone',
+  'Controllers/TravelController',
   'Controllers/MoonMenuController',
-	'Modules/TemplateLoader',
+  'Modules/TemplateLoader',
   'Models/Planet',
   'Models/Moon'
 ],

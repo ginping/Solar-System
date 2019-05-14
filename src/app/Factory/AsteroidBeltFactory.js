@@ -4,9 +4,8 @@ define(
   'Modules/Scene',
   'Environment/Constants',
   'Modules/RandomNumberGenerator',
-  'Models/Asteroid'
 ],
-function(Scene, Constants, RandomNumberGenerator, Asteroid) {
+function(Scene, Constants, RandomNumberGenerator) {
   'use strict';
 
   class AsteroidBeltFactory {
