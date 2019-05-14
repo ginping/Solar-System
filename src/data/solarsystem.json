@@ -481,11 +481,6 @@
         "distanceFromParent": {
             "min": 344100000,
             "max": 493700000
-        },
-        "_3d": {
-            "textures": {
-                "base": "/Graduation-project-simple/src/assets/textures/pluto.jpg"
-            }
         }
     },
     "kuiperBelt": {
@@ -495,11 +490,6 @@
         "distanceFromParent": {
             "min": 4638000000,
             "max": 7480000000
-        },
-        "_3d": {
-            "textures": {
-                "base": "/Graduation-project-simple/src/assets/textures/pluto.jpg"
-            }
         }
     }
 }

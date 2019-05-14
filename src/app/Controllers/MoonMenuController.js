@@ -11,7 +11,6 @@ function($, _, Backbone, TemplateLoader, TravelController) {
 
   const ORBIT_COLOR_DEFAULT = '#424242';
   const ORBIT_COLOR_HIGHLIGHT = '#b863f2';
-  const ORBIT_COLOR_ACTIVE = '#3beaf7';
 
   return Backbone.View.extend({
     events: {

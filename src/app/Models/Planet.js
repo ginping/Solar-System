@@ -174,7 +174,6 @@ function(
 
     buildFullObject3D() {
       this.setAxes();
-      // this.createLabelSprite();
 
       this._orbitLine = new Orbit(this);
       this._orbitCentroid.add(
@@ -184,8 +183,6 @@ function(
         this._objectCentroid
       );
 
-      // Axis Helper (x = red, y = green, z = blue)
-      // this._threeObject.add(new THREE.AxisHelper(this._threeDiameter * 2 + 1));
     }
 
     createThreeDiameter() {

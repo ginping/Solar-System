@@ -33,8 +33,6 @@ function(Constants, Scene, RandomNumberGenerator) {
         var positions = new Float32Array(particles * 3);
         var colors = new Float32Array(particles * 3);
         var color = new THREE.Color();
-        var n = 1000;
-        var n2 = n / 2; // particles spread in the cube
 
         for (var i = 0; i < positions.length; i += 3) {
           var pos = this.getPosition(i);

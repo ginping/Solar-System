@@ -30,8 +30,6 @@ function(Scene, Constants, RandomNumberGenerator) {
         var positions = new Float32Array(particles * 3);
         var colors = new Float32Array(particles * 3);
         var color = new THREE.Color();
-        var n = 1000;
-        var n2 = n / 2; // particles spread in the cube
 
         var material = new THREE.PointsMaterial({
           size: 16,
@@ -48,7 +46,6 @@ function(Scene, Constants, RandomNumberGenerator) {
           positions[i + 1] = y;
           positions[i + 2] = z;
 
-          var rgbValue = this._randomNumberGenerator.getRandomArbitraryNumber(1, 20);
           color.setRGB(119, 81, 20);
 
           colors[i] = color.r;
@@ -94,7 +91,7 @@ function(Scene, Constants, RandomNumberGenerator) {
       var randomOffset = odd ? randomNumber * -1 : randomNumber;
 
       var amplitude = d + randomOffset * (2 + Math.random());
-      var theta = count + 1 * Math.random() * this._orbitRadian * this._d2r;
+      var theta = count + Math.random() * this._orbitRadian * this._d2r;
 
       var posX = amplitude * Math.cos(theta);
       var posY = amplitude * Math.sin(theta);

@@ -163,8 +163,6 @@ function(
     },
 
     highlightOrbit: function(target) {
-      var hightlightColor = '#197eaa'; // target.orbitHighlightColor || #216883
-
       target.orbitLine.orbit.material.color = new THREE.Color(ORBIT_COLOR_HIGHLIGHT); // new THREE.Color('#d3d3d3');
       target.orbitLine.orbit.material.needsUpdate = true;
     },

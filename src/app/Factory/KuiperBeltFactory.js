@@ -28,9 +28,6 @@ function(Scene, Constants, RandomNumberGenerator) {
         var geometry = new THREE.BufferGeometry();
         var positions = new Float32Array(particles * 3);
         var colors = new Float32Array(particles * 3);
-        var color = new THREE.Color();
-        var n = 1000;
-        var n2 = n / 2; // particles spread in the cube
 
         var material = new THREE.PointsMaterial({
           size: 1,
