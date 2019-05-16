@@ -92,7 +92,6 @@ function($, _, Backbone, TemplateLoader, TravelController) {
 
       this.highlightObject(e);
 
-      // $(e.currentTarget).trigger('click.zf.accordion');
     },
 
     onMouseLeave: function(e) {
@@ -131,9 +130,7 @@ function($, _, Backbone, TemplateLoader, TravelController) {
 
     highlightTarget: function(target) {
       var distanceTo = this.scene.camera.position.distanceTo(target.threeObject.position);
-      var highlightDiameter = distanceTo * 0.011; // 1.1% of distance to target
-
-      target.highlight = highlightDiameter;
+      target.highlight = distanceTo * 0.011;
       target.highlight.material.opacity = 0.9;
     },
 
@@ -169,7 +166,7 @@ function($, _, Backbone, TemplateLoader, TravelController) {
       var target = null;
 
       for (var i = 0; i < this.sceneObjects.length; i++) {
-        if (this.sceneObjects[i].id == id) {
+        if (this.sceneObjects[i].id === id) {
           return this.sceneObjects[i];
         }
       }

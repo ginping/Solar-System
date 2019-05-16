@@ -156,9 +156,7 @@ function(
 
     highlightTarget: function(target) {
       var distanceTo = this.scene.camera.position.distanceTo(target.threeObject.position);
-      var highlightDiameter = distanceTo * 0.011; // 1.1% of distance to target
-
-      target.highlight = highlightDiameter;
+      target.highlight = distanceTo * 0.011;
       target.highlight.material.opacity = 0.9;
     },
 
